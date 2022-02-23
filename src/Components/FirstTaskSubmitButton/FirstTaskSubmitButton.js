@@ -10,7 +10,7 @@ export default class FirstTaskSubmitButton extends React.Component {
     render() {
         return (
             <div>
-                <input type="submit" value="DisplayData" onChange={this.onSubmitForm} />
+                <input type="submit" value="DisplayData" onSubmit={this.onSubmitForm} />
             </div>
         );
     }

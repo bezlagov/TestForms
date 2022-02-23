@@ -1,8 +1,9 @@
 import './App.css';
-import FilterableProductTable from './Components/FilterableProductTable/FilterableProductTable';
 import FormHolder from './Components/FormHolder/FormHolder';
 import SecondTaskController from './Components/SecondTask/SecondTaskController/SecondTaskController';
-/*import ControledComponent from './ControledComponents/ControledComponent';
+/*
+import FilterableProductTable from './Components/FilterableProductTable/FilterableProductTable';
+import ControledComponent from './ControledComponents/ControledComponent';
 import PropTypesExample from './PropTypesExample/PropTypesExample';*/
 const PRODUCTS = [
   { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
