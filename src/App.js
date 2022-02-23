@@ -12,7 +12,7 @@ const PRODUCTS = [
   { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone X' },
   { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' },
 ];
-
+const modificator = [0.5, 0.05];
 function App() {
   return (
     <div className="App">
@@ -21,7 +21,10 @@ function App() {
       {/*<FilterableProductTable  products={PRODUCTS}/>*/}
       <FormHolder />
       <hr />
-      <SecondTaskController />
+      <SecondTaskController
+        modificator1={modificator[0]}
+        modificator2={modificator[1]}
+      />
     </div>
   );
 }

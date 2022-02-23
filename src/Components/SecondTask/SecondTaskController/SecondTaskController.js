@@ -9,7 +9,6 @@ export default class SecondTaskController extends React.Component {
             input1: 0,
             input2: 0,
         }
-        this.modificator = [0.05, 0.005];
 
         this.onInputChange = this.onInputChange.bind(this);
 
@@ -37,10 +36,10 @@ export default class SecondTaskController extends React.Component {
                     handler={this.onInputChange} />
                 <Calculator
                     input={this.state.input1}
-                    modificator={this.modificator[0]} />
+                    modificator={this.props.modificator1} />
                 <Calculator
                     input={this.state.input2}
-                    modificator={this.modificator[1]} />
+                    modificator={this.props.modificator2} />
             </div>
         );
     }
